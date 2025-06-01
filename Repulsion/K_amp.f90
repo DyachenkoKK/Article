@@ -35,13 +35,14 @@ implicit none
 integer j, alfa1_num, alfa2_num
 real*8 alfa1_min, alfa1_max, alfa1_step, alfa2_min, alfa2_max, alfa2_step, alfa1, alfa2, alfa
 
-integer i, gm_num, Ndz
+integer i, gm_num, Ndz, tmp
 real*8 gm_step, gamma, alfa_max, pols(10), RDabs_alf, gm
 complex*16 alfa_c
 common/gm/gm
 external RDabs,RDabs_alf
 
 
+tmp = 1
     print*, "K_pol has been started "
     f = 0.01d0; w=f*2d0*pi;
     key=1
